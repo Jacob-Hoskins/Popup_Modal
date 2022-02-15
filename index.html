@@ -10,26 +10,6 @@
 
   <body>
 
-    <!-- <div id="Modal">
-
-      <h1 class="modal_header">Create Account</h1>
-      <p onclick="create_account_close()" class="close_modal">x</p>
-
-      <div class="info">
-        <p>Email</p>
-        <input type="text" class="email_input">
-        <p>Username</p>
-        <input type="text">
-        <p>Password</p>
-        <input type="">
-        <p>Confirm Password</p>
-        <input type="text">
-
-        <button onclick="create_account()">Create Account</button>
-
-      </div> -->
-    </div>
-
     <div class="login_container" id="LoginContainer">
       <h1>Login</h1>
       
@@ -39,10 +19,29 @@
       <input type="password">
       <button onclick="login_handler()">Login</button>
 
-      <p onclick="create_account_handler()" class="create_account" id="ModalHandler">create account</p>
-      
+      <p class="create_account" id="ModalHandler" onclick="open_modal()">create account</p>
     </div>
 
+    <div class="modal" id="Modal">
+      <div class="modal_content">
+        <h1>Create Account</h1>
+
+        <p class="close" onclick="close_handler()">X</p>
+        <p>Username</p>
+        <input type="text">
+
+        <p>Email</p>
+        <input type="text">
+
+        <p>Password</p>
+        <input type="password">
+
+        <p>Confirm Password</p>
+        <input type="password">
+
+        <button onclick="close_handler()">Create Account</button>
+      </div>
+    </div>
   </body>
 
 </html>
